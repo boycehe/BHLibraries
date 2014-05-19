@@ -23,6 +23,7 @@
 		4543851D192A28D40005062E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4543851B192A28D40005062E /* InfoPlist.strings */; };
 		4543851F192A28D40005062E /* BHLibrariesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4543851E192A28D40005062E /* BHLibrariesTests.m */; };
 		4543852B192A29000005062E /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 4543852A192A29000005062E /* Tools.m */; };
+		458D8188192A2E1A0072689C /* NSDate+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 458D8187192A2E1A0072689C /* NSDate+Helper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		4543851E192A28D40005062E /* BHLibrariesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BHLibrariesTests.m; sourceTree = "<group>"; };
 		45438529192A29000005062E /* Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
 		4543852A192A29000005062E /* Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tools.m; sourceTree = "<group>"; };
+		458D8186192A2E1A0072689C /* NSDate+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Helper.h"; sourceTree = "<group>"; };
+		458D8187192A2E1A0072689C /* NSDate+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Helper.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +90,7 @@
 		454384E7192A28D40005062E = {
 			isa = PBXGroup;
 			children = (
+				458D8185192A2E1A0072689C /* Category */,
 				45438528192A28F10005062E /* Method */,
 				454384FB192A28D40005062E /* BHLibraries */,
 				45438518192A28D40005062E /* BHLibrariesTests */,
@@ -164,6 +168,15 @@
 				4543852A192A29000005062E /* Tools.m */,
 			);
 			path = Method;
+			sourceTree = "<group>";
+		};
+		458D8185192A2E1A0072689C /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				458D8186192A2E1A0072689C /* NSDate+Helper.h */,
+				458D8187192A2E1A0072689C /* NSDate+Helper.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				45438506192A28D40005062E /* AppDelegate.m in Sources */,
+				458D8188192A2E1A0072689C /* NSDate+Helper.m in Sources */,
 				45438502192A28D40005062E /* main.m in Sources */,
 				45438509192A28D40005062E /* BHLibraries.xcdatamodeld in Sources */,
 				4543852B192A29000005062E /* Tools.m in Sources */,
@@ -461,6 +475,7 @@
 				45438524192A28D40005062E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		45438525192A28D40005062E /* Build configuration list for PBXNativeTarget "BHLibrariesTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +484,7 @@
 				45438527192A28D40005062E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
