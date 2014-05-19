@@ -8,9 +8,10 @@
 
 #import "Tools.h"
 #include <dlfcn.h>
+#import "sys/utsname.h"
 @implementation Tools
 
-- (NSString*)getDeviceSerialNumber{
++ (NSString*)getDeviceSerialNumber{
 
     NSString *serialNumber = nil;
     void *IOKit = dlopen("/System/Library/Frameworks/IOKit.framework/IOKit", RTLD_NOW);
@@ -41,6 +42,36 @@
     
     return serialNumber;
 
+}
+
+//验证是否是合法的email
++ (BOOL)isValidEmail:(NSString*)emailAdr
+{
+    NSString *emailRegex = @"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}";
+    
+    NSPredicate *emailTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", emailRegex];
+    
+    return [emailTest evaluateWithObject:emailAdr];
+    
+}
+
++ (NSString*)getDeviceModel
+
+{
+    
+    //here use sys/utsname.h
+    
+    struct utsname systemInfo;
+    
+    uname(&systemInfo);
+    
+    //get the device model
+    
+    NSString *model = [NSString stringWithCString:systemInfo.machine encoding:NSUTF8StringEncoding];
+    
+    return model;
+    
+    
 }
 
 @end

@@ -10,6 +10,9 @@
 
 @interface Tools : NSObject
 //获取序列号
-- (NSString*)getDeviceSerialNumber;
-
++ (NSString*)getDeviceSerialNumber;
+//验证是否是合法的email
++ (BOOL)isValidEmail:(NSString*)emailAdr;
+//获取设备类型
++ (NSString*)getDeviceModel;
 @end
