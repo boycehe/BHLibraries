@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "NSDate+Helper.h"
 @implementation AppDelegate
 
 @synthesize managedObjectContext = _managedObjectContext;
@@ -19,6 +19,9 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    NSLog(@"date=%@",[[NSDate date] stringWithFormat:@"yyyy-MM-dd HH:mm:ss"]);
+    
     [self.window makeKeyAndVisible];
     return YES;
 }

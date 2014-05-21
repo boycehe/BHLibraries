@@ -23,6 +23,7 @@
 		4543851D192A28D40005062E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4543851B192A28D40005062E /* InfoPlist.strings */; };
 		4543851F192A28D40005062E /* BHLibrariesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4543851E192A28D40005062E /* BHLibrariesTests.m */; };
 		4543852B192A29000005062E /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 4543852A192A29000005062E /* Tools.m */; };
+		45659327192C4AA80073C389 /* UIImage+fixOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 45659326192C4AA80073C389 /* UIImage+fixOrientation.m */; };
 		458D8188192A2E1A0072689C /* NSDate+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 458D8187192A2E1A0072689C /* NSDate+Helper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,8 @@
 		4543851E192A28D40005062E /* BHLibrariesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BHLibrariesTests.m; sourceTree = "<group>"; };
 		45438529192A29000005062E /* Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
 		4543852A192A29000005062E /* Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tools.m; sourceTree = "<group>"; };
+		45659325192C4AA80073C389 /* UIImage+fixOrientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+fixOrientation.h"; sourceTree = "<group>"; };
+		45659326192C4AA80073C389 /* UIImage+fixOrientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+fixOrientation.m"; sourceTree = "<group>"; };
 		458D8186192A2E1A0072689C /* NSDate+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Helper.h"; sourceTree = "<group>"; };
 		458D8187192A2E1A0072689C /* NSDate+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Helper.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -175,6 +178,8 @@
 			children = (
 				458D8186192A2E1A0072689C /* NSDate+Helper.h */,
 				458D8187192A2E1A0072689C /* NSDate+Helper.m */,
+				45659325192C4AA80073C389 /* UIImage+fixOrientation.h */,
+				45659326192C4AA80073C389 /* UIImage+fixOrientation.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -274,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45659327192C4AA80073C389 /* UIImage+fixOrientation.m in Sources */,
 				45438506192A28D40005062E /* AppDelegate.m in Sources */,
 				458D8188192A2E1A0072689C /* NSDate+Helper.m in Sources */,
 				45438502192A28D40005062E /* main.m in Sources */,
