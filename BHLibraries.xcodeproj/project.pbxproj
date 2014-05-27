@@ -24,6 +24,8 @@
 		4543851F192A28D40005062E /* BHLibrariesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4543851E192A28D40005062E /* BHLibrariesTests.m */; };
 		4543852B192A29000005062E /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 4543852A192A29000005062E /* Tools.m */; };
 		45659327192C4AA80073C389 /* UIImage+fixOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 45659326192C4AA80073C389 /* UIImage+fixOrientation.m */; };
+		458843C21934621900B4CE33 /* ChineseString.m in Sources */ = {isa = PBXBuildFile; fileRef = 458843BF1934621900B4CE33 /* ChineseString.m */; };
+		458843C31934621900B4CE33 /* pinyin.c in Sources */ = {isa = PBXBuildFile; fileRef = 458843C01934621900B4CE33 /* pinyin.c */; };
 		458D8188192A2E1A0072689C /* NSDate+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 458D8187192A2E1A0072689C /* NSDate+Helper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
@@ -60,6 +62,10 @@
 		4543852A192A29000005062E /* Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tools.m; sourceTree = "<group>"; };
 		45659325192C4AA80073C389 /* UIImage+fixOrientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+fixOrientation.h"; sourceTree = "<group>"; };
 		45659326192C4AA80073C389 /* UIImage+fixOrientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+fixOrientation.m"; sourceTree = "<group>"; };
+		458843BE1934621900B4CE33 /* ChineseString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChineseString.h; sourceTree = "<group>"; };
+		458843BF1934621900B4CE33 /* ChineseString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChineseString.m; sourceTree = "<group>"; };
+		458843C01934621900B4CE33 /* pinyin.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pinyin.c; sourceTree = "<group>"; };
+		458843C11934621900B4CE33 /* pinyin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pinyin.h; sourceTree = "<group>"; };
 		458D8186192A2E1A0072689C /* NSDate+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Helper.h"; sourceTree = "<group>"; };
 		458D8187192A2E1A0072689C /* NSDate+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Helper.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -167,10 +173,22 @@
 		45438528192A28F10005062E /* Method */ = {
 			isa = PBXGroup;
 			children = (
+				458843BD1934621900B4CE33 /* PYSort */,
 				45438529192A29000005062E /* Tools.h */,
 				4543852A192A29000005062E /* Tools.m */,
 			);
 			path = Method;
+			sourceTree = "<group>";
+		};
+		458843BD1934621900B4CE33 /* PYSort */ = {
+			isa = PBXGroup;
+			children = (
+				458843BE1934621900B4CE33 /* ChineseString.h */,
+				458843BF1934621900B4CE33 /* ChineseString.m */,
+				458843C01934621900B4CE33 /* pinyin.c */,
+				458843C11934621900B4CE33 /* pinyin.h */,
+			);
+			path = PYSort;
 			sourceTree = "<group>";
 		};
 		458D8185192A2E1A0072689C /* Category */ = {
@@ -279,12 +297,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				458843C31934621900B4CE33 /* pinyin.c in Sources */,
 				45659327192C4AA80073C389 /* UIImage+fixOrientation.m in Sources */,
 				45438506192A28D40005062E /* AppDelegate.m in Sources */,
 				458D8188192A2E1A0072689C /* NSDate+Helper.m in Sources */,
 				45438502192A28D40005062E /* main.m in Sources */,
 				45438509192A28D40005062E /* BHLibraries.xcdatamodeld in Sources */,
 				4543852B192A29000005062E /* Tools.m in Sources */,
+				458843C21934621900B4CE33 /* ChineseString.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
