@@ -1,0 +1,161 @@
+PODS:
+  - AFNetworking (2.2.4):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+    - AFNetworking/UIKit
+  - AFNetworking/NSURLConnection (2.2.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.2.4):
+    - AFNetworking/NSURLConnection
+  - AFNetworking/Reachability (2.2.4)
+  - AFNetworking/Security (2.2.4)
+  - AFNetworking/Serialization (2.2.4)
+  - AFNetworking/UIKit (2.2.4):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - BlocksKit (2.2.3):
+    - BlocksKit/All
+  - BlocksKit/All (2.2.3):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+    - BlocksKit/MessageUI
+    - BlocksKit/UIKit
+  - BlocksKit/Core (2.2.3)
+  - BlocksKit/DynamicDelegate (2.2.3)
+  - BlocksKit/MessageUI (2.2.3):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - BlocksKit/UIKit (2.2.3):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - JSONKit (1.5pre)
+  - MagicalRecord (2.2):
+    - MagicalRecord/Core
+  - MagicalRecord/Core (2.2)
+  - Nimbus (1.2.0):
+    - Nimbus/AttributedLabel
+    - Nimbus/Badge
+    - Nimbus/Collections
+    - Nimbus/Collections
+    - Nimbus/Core
+    - Nimbus/CSS
+    - Nimbus/Interapp
+    - Nimbus/Launcher
+    - Nimbus/Models
+    - Nimbus/NetworkControllers
+    - Nimbus/NetworkImage
+    - Nimbus/Overview
+    - Nimbus/PagingScrollView
+    - Nimbus/Photos
+    - Nimbus/Textfield
+    - Nimbus/WebController
+  - Nimbus/AttributedLabel (1.2.0):
+    - Nimbus/Core
+  - Nimbus/Badge (1.2.0):
+    - Nimbus/Core
+  - Nimbus/Collections (1.2.0):
+    - Nimbus/Core
+  - Nimbus/Core (1.2.0)
+  - Nimbus/CSS (1.2.0):
+    - AFNetworking (~> 2.1)
+    - Nimbus/Core
+    - Nimbus/Textfield
+  - Nimbus/Interapp (1.2.0):
+    - Nimbus/Core
+  - Nimbus/Launcher (1.2.0):
+    - Nimbus/Core
+    - Nimbus/PagingScrollView
+  - Nimbus/Models (1.2.0):
+    - Nimbus/Core
+  - Nimbus/NetworkControllers (1.2.0):
+    - Nimbus/Core
+  - Nimbus/NetworkImage (1.2.0):
+    - AFNetworking (~> 2.1)
+    - Nimbus/Core
+  - Nimbus/Overview (1.2.0):
+    - Nimbus/Core
+    - Nimbus/Models
+  - Nimbus/PagingScrollView (1.2.0):
+    - Nimbus/Core
+  - Nimbus/Photos (1.2.0):
+    - Nimbus/Core
+    - Nimbus/PagingScrollView
+  - Nimbus/Textfield (1.2.0):
+    - Nimbus/Core
+  - Nimbus/WebController (1.2.0):
+    - Nimbus/Core
+  - pop (1.0.5)
+  - Reachability (3.0.0)
+  - ReactiveCocoa (2.3.1):
+    - ReactiveCocoa/UI
+  - ReactiveCocoa/Core (2.3.1):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.3.1)
+  - ReactiveCocoa/UI (2.3.1):
+    - ReactiveCocoa/Core
+  - SAMAddressBar (0.1.0)
+  - SAMBadgeView (0.1.0)
+  - SAMCategories (0.5.1)
+  - SAMCircleProgressView (0.1.1)
+  - SAMGradientView (0.2.1)
+  - SAMHUDView (0.1.3)
+  - SAMLabel (0.1.0)
+  - SAMLoadingView (0.1.0)
+  - SAMRateLimit (0.2.0)
+  - SAMTextField (0.1.1)
+  - SAMTextView (0.2.1)
+  - SAMWebView (0.2.1)
+  - SSToolkit (2.0.0):
+    - SAMAddressBar
+    - SAMBadgeView
+    - SAMCategories
+    - SAMCircleProgressView
+    - SAMGradientView
+    - SAMHUDView
+    - SAMLabel
+    - SAMLoadingView
+    - SAMRateLimit
+    - SAMTextField
+    - SAMTextView
+    - SAMWebView
+
+DEPENDENCIES:
+  - AFNetworking
+  - BlocksKit
+  - JSONKit (~> 1.4)
+  - MagicalRecord
+  - Nimbus (~> 1.2.0)
+  - pop (~> 1.0.5)
+  - Reachability (~> 3.0.0)
+  - ReactiveCocoa (~> 2.3)
+  - SSToolkit (~> 2.0.0)
+
+SPEC CHECKSUMS:
+  AFNetworking: ab63e259fe91eef4519b371ef0a4955af0e73e64
+  BlocksKit: 07c8a80f04275efac6a5f8b973782489c083a182
+  JSONKit: efef3bbd3372ff33f96b9c6f34cf4fe18e74ab69
+  MagicalRecord: 2b471584fc9e3137f3d0a56967917baa4979e224
+  Nimbus: 14fd6f034c5f53d3dccef6cfd5763959497289a9
+  pop: 75fa2b33934200a8a68abb449ac1726fcf7e43b9
+  Reachability: d369b8d7d33730a4bb71d0f601e287da9867c9dd
+  ReactiveCocoa: dca75777b9d18990c8714a3a6f2149f29b4d1462
+  SAMAddressBar: 5880d7cc6fea49e7371b8183924b59cdd14b82fe
+  SAMBadgeView: 6f29c18e5dc4ddf6d843c3c5e9c9207028c2e8a8
+  SAMCategories: b11ba511a3a43e572add39eea91b5ba294d34c7f
+  SAMCircleProgressView: 8ec885aeaf60bd1ab717d82da166d3a807c63931
+  SAMGradientView: 37ef027b0da8b5fd85bfdfef49801b5262160998
+  SAMHUDView: d16d5814ab1a2e86a0c6c5aba8d67bbd845d78b1
+  SAMLabel: 14570303160fa7844fd4ebb0358cdb3841076825
+  SAMLoadingView: 11b746311268140f6a2380723215fe96a6d15dee
+  SAMRateLimit: f47a9961333e2d44fe189ef2233cee48012905ee
+  SAMTextField: 2dece66424f76a0aea1209adb0becbe728ad9098
+  SAMTextView: 1062a784ba7b2080b0c17748001c416b53010b4b
+  SAMWebView: e615d50d3683b9b4fd3e10da9d079ed03230ee24
+  SSToolkit: 64d8bb043b4f36da68936ddbb4ec4e8cb3c5a8df
+
+COCOAPODS: 0.33.1
