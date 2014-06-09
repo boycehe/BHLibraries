@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "NSDate+Helper.h"
+#import "ZipArchive.h"
 @implementation AppDelegate
 
 @synthesize managedObjectContext = _managedObjectContext;
@@ -22,8 +23,73 @@
     
     NSLog(@"date=%@",[[NSDate date] stringWithFormat:@"yyyy-MM-dd HH:mm:ss"]);
     
+    ZipArchive  *zip = [[ZipArchive alloc]init];
+    NSString *url = @"http://developer.dreamhand.com.cn/Doucment.zip";
+    
+   
+    
+    NSLog(@"path1111=%@",[self getFullTempPathWithUrl:url]);
+    
+  
+    
+  
+    if ([zip UnzipOpenFile:[self getFullTempPathWithUrl:url]]) {
+        BOOL ret = [zip UnzipFileTo:[self getTemp1Path] overWrite:YES];
+        if (NO == ret){
+            [zip UnzipCloseFile];
+            NSLog(@"解压失败");
+        };
+    }
+    
+ 
+    
+  
+    NSLog(@"hh___hhh%@",[self getFullTempPathWithUrl:url]);
+    
     [self.window makeKeyAndVisible];
     return YES;
+}
+
+- (NSString*)getFullTempPathWithUrl:(NSString*)url
+{
+    NSString *fullPath = nil;
+    
+    fullPath = [[self getTempPath] stringByAppendingPathComponent:[url lastPathComponent]];
+    
+    return fullPath;
+}
+-(NSString*)getTemp1Path
+{
+    NSString  *myTempPath = [NSString stringWithFormat:@"%@/%@",[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject],@"MyTemp1"];
+    
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    
+    BOOL fileExists = [fileManager fileExistsAtPath:myTempPath];
+    
+    if (!fileExists)
+    {
+		[fileManager createDirectoryAtPath:myTempPath withIntermediateDirectories:YES attributes:nil error:nil];
+	}
+    
+    return myTempPath;
+    
+}
+
+-(NSString*)getTempPath
+{
+    NSString  *myTempPath = [NSString stringWithFormat:@"%@/%@",[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject],@"MyTemp"];
+    
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    
+    BOOL fileExists = [fileManager fileExistsAtPath:myTempPath];
+    
+    if (!fileExists)
+    {
+		[fileManager createDirectoryAtPath:myTempPath withIntermediateDirectories:YES attributes:nil error:nil];
+	}
+    
+    return myTempPath;
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

@@ -84,12 +84,24 @@
 #define COCOAPODS_VERSION_MINOR_BlocksKit_UIKit 2
 #define COCOAPODS_VERSION_PATCH_BlocksKit_UIKit 3
 
+// CocoaAsyncSocket
+#define COCOAPODS_POD_AVAILABLE_CocoaAsyncSocket
+#define COCOAPODS_VERSION_MAJOR_CocoaAsyncSocket 7
+#define COCOAPODS_VERSION_MINOR_CocoaAsyncSocket 3
+#define COCOAPODS_VERSION_PATCH_CocoaAsyncSocket 5
+
 // JSONKit
 #define COCOAPODS_POD_AVAILABLE_JSONKit
 // This library does not follow semantic-versioning,
 // so we were not able to define version macros.
 // Please contact the author.
 // Version: 1.5pre.
+
+// MBProgressHUD
+#define COCOAPODS_POD_AVAILABLE_MBProgressHUD
+#define COCOAPODS_VERSION_MAJOR_MBProgressHUD 0
+#define COCOAPODS_VERSION_MINOR_MBProgressHUD 8
+#define COCOAPODS_VERSION_PATCH_MBProgressHUD 0
 
 // MagicalRecord
 #define COCOAPODS_POD_AVAILABLE_MagicalRecord
@@ -199,6 +211,18 @@
 #define COCOAPODS_VERSION_MINOR_Nimbus_WebController 2
 #define COCOAPODS_VERSION_PATCH_Nimbus_WebController 0
 
+// PonyDebugger
+#define COCOAPODS_POD_AVAILABLE_PonyDebugger
+#define COCOAPODS_VERSION_MAJOR_PonyDebugger 0
+#define COCOAPODS_VERSION_MINOR_PonyDebugger 3
+#define COCOAPODS_VERSION_PATCH_PonyDebugger 1
+
+// RDVTabBarController
+#define COCOAPODS_POD_AVAILABLE_RDVTabBarController
+#define COCOAPODS_VERSION_MAJOR_RDVTabBarController 1
+#define COCOAPODS_VERSION_MINOR_RDVTabBarController 1
+#define COCOAPODS_VERSION_PATCH_RDVTabBarController 6
+
 // Reachability
 #define COCOAPODS_POD_AVAILABLE_Reachability
 #define COCOAPODS_VERSION_MAJOR_Reachability 3
@@ -306,6 +330,24 @@
 #define COCOAPODS_VERSION_MAJOR_SSToolkit 2
 #define COCOAPODS_VERSION_MINOR_SSToolkit 0
 #define COCOAPODS_VERSION_PATCH_SSToolkit 0
+
+// SocketRocket
+#define COCOAPODS_POD_AVAILABLE_SocketRocket
+#define COCOAPODS_VERSION_MAJOR_SocketRocket 0
+#define COCOAPODS_VERSION_MINOR_SocketRocket 3
+#define COCOAPODS_VERSION_PATCH_SocketRocket 1
+
+// TMCache
+#define COCOAPODS_POD_AVAILABLE_TMCache
+#define COCOAPODS_VERSION_MAJOR_TMCache 1
+#define COCOAPODS_VERSION_MINOR_TMCache 2
+#define COCOAPODS_VERSION_PATCH_TMCache 0
+
+// ZipArchive
+#define COCOAPODS_POD_AVAILABLE_ZipArchive
+#define COCOAPODS_VERSION_MAJOR_ZipArchive 1
+#define COCOAPODS_VERSION_MINOR_ZipArchive 2
+#define COCOAPODS_VERSION_PATCH_ZipArchive 0
 
 // pop
 #define COCOAPODS_POD_AVAILABLE_pop

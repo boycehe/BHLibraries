@@ -33,10 +33,12 @@ PODS:
   - BlocksKit/UIKit (2.2.3):
     - BlocksKit/Core
     - BlocksKit/DynamicDelegate
+  - CocoaAsyncSocket (7.3.5)
   - JSONKit (1.5pre)
   - MagicalRecord (2.2):
     - MagicalRecord/Core
   - MagicalRecord/Core (2.2)
+  - MBProgressHUD (0.8)
   - Nimbus (1.2.0):
     - Nimbus/AttributedLabel
     - Nimbus/Badge
@@ -89,7 +91,10 @@ PODS:
     - Nimbus/Core
   - Nimbus/WebController (1.2.0):
     - Nimbus/Core
+  - PonyDebugger (0.3.1):
+    - SocketRocket
   - pop (1.0.5)
+  - RDVTabBarController (1.1.6)
   - Reachability (3.0.0)
   - ReactiveCocoa (2.3.1):
     - ReactiveCocoa/UI
@@ -110,6 +115,7 @@ PODS:
   - SAMTextField (0.1.1)
   - SAMTextView (0.2.1)
   - SAMWebView (0.2.1)
+  - SocketRocket (0.3.1-beta2)
   - SSToolkit (2.0.0):
     - SAMAddressBar
     - SAMBadgeView
@@ -123,25 +129,37 @@ PODS:
     - SAMTextField
     - SAMTextView
     - SAMWebView
+  - TMCache (1.2.0)
+  - ZipArchive (1.2.0)
 
 DEPENDENCIES:
   - AFNetworking
   - BlocksKit
+  - CocoaAsyncSocket (~> 7.3.5)
   - JSONKit (~> 1.4)
   - MagicalRecord
+  - MBProgressHUD (~> 0.8)
   - Nimbus (~> 1.2.0)
+  - PonyDebugger (~> 0.3.1)
   - pop (~> 1.0.5)
+  - RDVTabBarController
   - Reachability (~> 3.0.0)
   - ReactiveCocoa (~> 2.3)
   - SSToolkit (~> 2.0.0)
+  - TMCache (~> 1.2.0)
+  - ZipArchive (~> 1.2.0)
 
 SPEC CHECKSUMS:
   AFNetworking: ab63e259fe91eef4519b371ef0a4955af0e73e64
   BlocksKit: 07c8a80f04275efac6a5f8b973782489c083a182
+  CocoaAsyncSocket: 45bdbbc1c0a5ed0640ff4c42af325ba43a2f099a
   JSONKit: efef3bbd3372ff33f96b9c6f34cf4fe18e74ab69
   MagicalRecord: 2b471584fc9e3137f3d0a56967917baa4979e224
+  MBProgressHUD: c356980b0cd097f19acec959b49dca5eb8ec31be
   Nimbus: 14fd6f034c5f53d3dccef6cfd5763959497289a9
+  PonyDebugger: 256e19c15c093e15f950f92b1a5017f3feb3c87e
   pop: 75fa2b33934200a8a68abb449ac1726fcf7e43b9
+  RDVTabBarController: 252dafb16725f9a07026618ff51acf06a12b206b
   Reachability: d369b8d7d33730a4bb71d0f601e287da9867c9dd
   ReactiveCocoa: dca75777b9d18990c8714a3a6f2149f29b4d1462
   SAMAddressBar: 5880d7cc6fea49e7371b8183924b59cdd14b82fe
@@ -156,6 +174,9 @@ SPEC CHECKSUMS:
   SAMTextField: 2dece66424f76a0aea1209adb0becbe728ad9098
   SAMTextView: 1062a784ba7b2080b0c17748001c416b53010b4b
   SAMWebView: e615d50d3683b9b4fd3e10da9d079ed03230ee24
+  SocketRocket: 79a68ae186063c65e1fe6f638b1ae2927aa5f304
   SSToolkit: 64d8bb043b4f36da68936ddbb4ec4e8cb3c5a8df
+  TMCache: ea1c509badaf9a1245422aabf3c975b3277ab138
+  ZipArchive: 1753357f3081f87ab5776d4c4ff25f7ddefd2fd1
 
 COCOAPODS: 0.33.1
