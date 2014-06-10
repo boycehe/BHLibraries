@@ -24,16 +24,17 @@
     NSLog(@"date=%@",[[NSDate date] stringWithFormat:@"yyyy-MM-dd HH:mm:ss"]);
     
     ZipArchive  *zip = [[ZipArchive alloc]init];
-    NSString *url = @"http://developer.dreamhand.com.cn/Doucment.zip";
+    NSString *url = @"http://developer.dreamhand.com.cn/dreamhand.dhx";
     
    
     
     NSLog(@"path1111=%@",[self getFullTempPathWithUrl:url]);
     
   
-    
+    zip.stringEncoding = CFStringConvertEncodingToNSStringEncoding(kCFStringEncodingGB_18030_2000);
   
     if ([zip UnzipOpenFile:[self getFullTempPathWithUrl:url]]) {
+        
         BOOL ret = [zip UnzipFileTo:[self getTemp1Path] overWrite:YES];
         if (NO == ret){
             [zip UnzipCloseFile];

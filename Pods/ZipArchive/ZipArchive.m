@@ -292,6 +292,10 @@
             filename[fileInfo.size_filename] = '\0';
             
             // check if it contains directory
+            
+           // NSStringEncoding enc = CFStringConvertEncodingToNSStringEncoding(kCFStringEncodingGB_18030_2000);
+          //  NSString * strPath = [NSString  stringWithCString:filename encoding:enc];
+            
             NSString * strPath = [NSString stringWithCString:filename encoding:self.stringEncoding];
             BOOL isDirectory = NO;
             if( filename[fileInfo.size_filename-1]=='/' || filename[fileInfo.size_filename-1]=='\\')

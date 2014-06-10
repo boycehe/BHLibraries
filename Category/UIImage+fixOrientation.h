@@ -7,6 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+/*
+ 内存溢出
+ */
 
 @interface UIImage (fixOrientation)
 

@@ -5,7 +5,7 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>67E0F9B3-4498-48C1-A66B-8C33D49FEA14</string>
+	<string>8ABBE63D-2D74-4C00-9E3E-42EA890E1D92</string>
 	<key>IDESourceControlProjectName</key>
 	<string>BHLibraries</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
@@ -13,12 +13,10 @@
 		<key>4B7869A0-0461-441C-A4E2-8A151DFF5D0E</key>
 		<string>https://github.com/boycehe/BHLibraries.git</string>
 	</dict>
-	<key>IDESourceControlProjectPath</key>
-	<string>BHLibraries.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>4B7869A0-0461-441C-A4E2-8A151DFF5D0E</key>
-		<string>..</string>
+		<string>../../../BHLibraries</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/boycehe/BHLibraries.git</string>
