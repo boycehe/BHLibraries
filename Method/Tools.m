@@ -13,6 +13,7 @@
 
 + (NSString*)getDeviceSerialNumber{
 
+    //iOS8中已经无法使用
     NSString *serialNumber = nil;
     void *IOKit = dlopen("/System/Library/Frameworks/IOKit.framework/IOKit", RTLD_NOW);
     if (IOKit)

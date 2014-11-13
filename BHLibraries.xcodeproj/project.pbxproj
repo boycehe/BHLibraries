@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45048B641A14BFF200075A30 /* UIImageView+Expand.m in Sources */ = {isa = PBXBuildFile; fileRef = 45048B631A14BFF200075A30 /* UIImageView+Expand.m */; };
+		45048B671A14C09800075A30 /* UIImage+ImageTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 45048B651A14C09800075A30 /* UIImage+ImageTools.m */; };
 		454384F4192A28D40005062E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 454384F3192A28D40005062E /* Foundation.framework */; };
 		454384F6192A28D40005062E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 454384F5192A28D40005062E /* CoreGraphics.framework */; };
 		454384F8192A28D40005062E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 454384F7192A28D40005062E /* UIKit.framework */; };
@@ -42,6 +44,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		45048B621A14BFF200075A30 /* UIImageView+Expand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Expand.h"; sourceTree = "<group>"; };
+		45048B631A14BFF200075A30 /* UIImageView+Expand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Expand.m"; sourceTree = "<group>"; };
+		45048B651A14C09800075A30 /* UIImage+ImageTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageTools.m"; sourceTree = "<group>"; };
+		45048B661A14C09800075A30 /* UIImage+ImageTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageTools.h"; sourceTree = "<group>"; };
 		454384F0192A28D40005062E /* BHLibraries.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BHLibraries.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		454384F3192A28D40005062E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		454384F5192A28D40005062E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -205,10 +211,14 @@
 		458D8185192A2E1A0072689C /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				45048B661A14C09800075A30 /* UIImage+ImageTools.h */,
+				45048B651A14C09800075A30 /* UIImage+ImageTools.m */,
 				458D8186192A2E1A0072689C /* NSDate+Helper.h */,
 				458D8187192A2E1A0072689C /* NSDate+Helper.m */,
 				45659325192C4AA80073C389 /* UIImage+fixOrientation.h */,
 				45659326192C4AA80073C389 /* UIImage+fixOrientation.m */,
+				45048B621A14BFF200075A30 /* UIImageView+Expand.h */,
+				45048B631A14BFF200075A30 /* UIImageView+Expand.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -369,6 +379,8 @@
 				45438509192A28D40005062E /* BHLibraries.xcdatamodeld in Sources */,
 				4543852B192A29000005062E /* Tools.m in Sources */,
 				458843C21934621900B4CE33 /* ChineseString.m in Sources */,
+				45048B641A14BFF200075A30 /* UIImageView+Expand.m in Sources */,
+				45048B671A14C09800075A30 /* UIImage+ImageTools.m in Sources */,
 				458F7BF61946C12C00EFEED1 /* BHHttpRequestWrapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
