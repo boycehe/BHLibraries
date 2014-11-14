@@ -9,6 +9,9 @@
 #import "AppDelegate.h"
 #import "NSDate+Helper.h"
 #import "ZipArchive.h"
+#import "UIImageView+Expand.h"
+#import "DemoImageViewController.h"
+
 @implementation AppDelegate
 
 @synthesize managedObjectContext = _managedObjectContext;
@@ -20,32 +23,10 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    DemoImageViewController *v = [DemoImageViewController new];
+    self.window.rootViewController = v;
     
-    NSLog(@"date=%@",[[NSDate date] stringWithFormat:@"yyyy-MM-dd HH:mm:ss"]);
-    
-    ZipArchive  *zip = [[ZipArchive alloc]init];
-    NSString *url = @"http://developer.dreamhand.com.cn/dreamhand.dhx";
-    
-   
-    
-    NSLog(@"path1111=%@",[self getFullTempPathWithUrl:url]);
-    
-  
-    zip.stringEncoding = CFStringConvertEncodingToNSStringEncoding(kCFStringEncodingGB_18030_2000);
-  
-    if ([zip UnzipOpenFile:[self getFullTempPathWithUrl:url]]) {
-        
-        BOOL ret = [zip UnzipFileTo:[self getTemp1Path] overWrite:YES];
-        if (NO == ret){
-            [zip UnzipCloseFile];
-            NSLog(@"解压失败");
-        };
-    }
-    
- 
-    
-  
-    NSLog(@"hh___hhh%@",[self getFullTempPathWithUrl:url]);
+    self.window.backgroundColor = [UIColor yellowColor];
     
     [self.window makeKeyAndVisible];
     return YES;

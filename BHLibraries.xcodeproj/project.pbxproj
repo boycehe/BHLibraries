@@ -30,6 +30,9 @@
 		458843C31934621900B4CE33 /* pinyin.c in Sources */ = {isa = PBXBuildFile; fileRef = 458843C01934621900B4CE33 /* pinyin.c */; };
 		458D8188192A2E1A0072689C /* NSDate+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 458D8187192A2E1A0072689C /* NSDate+Helper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		458F7BF61946C12C00EFEED1 /* BHHttpRequestWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 458F7BF51946C12C00EFEED1 /* BHHttpRequestWrapper.m */; };
+		45FC58671A15ECB9006CF838 /* Test01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 45FC58661A15ECB9006CF838 /* Test01.jpg */; };
+		45FC58711A15EEFE006CF838 /* DemoImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45FC586F1A15EEFE006CF838 /* DemoImageViewController.m */; };
+		45FC58721A15EEFE006CF838 /* DemoImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45FC58701A15EEFE006CF838 /* DemoImageViewController.xib */; };
 		9645D414BA174E859A5CD958 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 891A9AF9C83B41A0AA89C26D /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +82,10 @@
 		458F7BF41946C12C00EFEED1 /* BHHttpRequestWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHHttpRequestWrapper.h; sourceTree = "<group>"; };
 		458F7BF51946C12C00EFEED1 /* BHHttpRequestWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHHttpRequestWrapper.m; sourceTree = "<group>"; };
 		458F7BF71946C14F00EFEED1 /* NetWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWork.h; sourceTree = "<group>"; };
+		45FC58661A15ECB9006CF838 /* Test01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Test01.jpg; sourceTree = "<group>"; };
+		45FC586E1A15EEFE006CF838 /* DemoImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoImageViewController.h; sourceTree = "<group>"; };
+		45FC586F1A15EEFE006CF838 /* DemoImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoImageViewController.m; sourceTree = "<group>"; };
+		45FC58701A15EEFE006CF838 /* DemoImageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoImageViewController.xib; sourceTree = "<group>"; };
 		891A9AF9C83B41A0AA89C26D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4AE7951CF7C4397990A3F9A /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,6 +120,7 @@
 		454384E7192A28D40005062E = {
 			isa = PBXGroup;
 			children = (
+				45FC586D1A15EEE9006CF838 /* Demo */,
 				458F7BF21946C12C00EFEED1 /* Net */,
 				458D8185192A2E1A0072689C /* Category */,
 				45438528192A28F10005062E /* Method */,
@@ -149,6 +157,7 @@
 		454384FB192A28D40005062E /* BHLibraries */ = {
 			isa = PBXGroup;
 			children = (
+				45FC58661A15ECB9006CF838 /* Test01.jpg */,
 				45438504192A28D40005062E /* AppDelegate.h */,
 				45438505192A28D40005062E /* AppDelegate.m */,
 				4543850A192A28D40005062E /* Images.xcassets */,
@@ -241,6 +250,16 @@
 			path = HttpRequest;
 			sourceTree = "<group>";
 		};
+		45FC586D1A15EEE9006CF838 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				45FC586E1A15EEFE006CF838 /* DemoImageViewController.h */,
+				45FC586F1A15EEFE006CF838 /* DemoImageViewController.m */,
+				45FC58701A15EEFE006CF838 /* DemoImageViewController.xib */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -319,7 +338,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				45438500192A28D40005062E /* InfoPlist.strings in Resources */,
+				45FC58671A15ECB9006CF838 /* Test01.jpg in Resources */,
 				4543850B192A28D40005062E /* Images.xcassets in Resources */,
+				45FC58721A15EEFE006CF838 /* DemoImageViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +395,7 @@
 				458843C31934621900B4CE33 /* pinyin.c in Sources */,
 				45659327192C4AA80073C389 /* UIImage+fixOrientation.m in Sources */,
 				45438506192A28D40005062E /* AppDelegate.m in Sources */,
+				45FC58711A15EEFE006CF838 /* DemoImageViewController.m in Sources */,
 				458D8188192A2E1A0072689C /* NSDate+Helper.m in Sources */,
 				45438502192A28D40005062E /* main.m in Sources */,
 				45438509192A28D40005062E /* BHLibraries.xcdatamodeld in Sources */,
