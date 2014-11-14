@@ -10,29 +10,29 @@
 	<string>BHLibraries</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>33BCFE59-98BE-4D3A-B3CA-CEBDB2B11538</key>
+		<key>0E678EDB89A78C69824CB4BB12931F72C46E7445</key>
 		<string>https://github.com/boycehe/BHLibraries.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>BHLibraries.xcodeproj/project.xcworkspace</string>
+	<string>BHLibraries.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>33BCFE59-98BE-4D3A-B3CA-CEBDB2B11538</key>
+		<key>0E678EDB89A78C69824CB4BB12931F72C46E7445</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/boycehe/BHLibraries.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>33BCFE59-98BE-4D3A-B3CA-CEBDB2B11538</string>
+	<string>0E678EDB89A78C69824CB4BB12931F72C46E7445</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>33BCFE59-98BE-4D3A-B3CA-CEBDB2B11538</string>
+			<string>0E678EDB89A78C69824CB4BB12931F72C46E7445</string>
 			<key>IDESourceControlWCCName</key>
 			<string>BHLibraries</string>
 		</dict>
